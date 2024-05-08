@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <title>Crof Programing</title>
+</head>
+
+<body>
+
+    <!-- Menú Principal -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="./image/logo.jpg" alt="logo"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#planes" onclick="seleccionar()">Planes</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <!-- <img src="./image/principal.jpg" alt="principal"> -->
+                <h1>¡ARMAMOS TU SITIO WEB!</h1>
+                <h2> Tu página que siempre deseaste al alcance de tu mano</h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Sección Planes -->
+
+    <div id="planes" class="planes">
+        <h2>PLANES</h2>
+        <div class="cards-container">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Página Web Simple</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Página Web Completa</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Página Web Profesional</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion Nosotros -->
+    <div id="nosotros" class="nosotros">
+        <h2>Nosotros</h2>
+        <div class="contenido-seccion">
+            <img src="./image/nosotros.jpg" alt="">
+            <p>En <span>Crof Programing</span>, nuestra misión es hacer que tu presencia en línea sea única y efectiva.
+                Nosotros entendemos que cada proyecto es único, por eso nos dedicamos a crear páginas web personalizadas
+                que reflejen la esencia y el mensaje de tu negocio. Desde pequeñas empresas hasta grandes corporaciones, hemos ayudado a una variedad de clientes a alcanzar
+                sus objetivos en línea. Nos enorgullece ofrecer soluciones web de alta calidad y servicio al cliente
+                excepcional en cada paso del camino. Confía en nosotros para llevar tu presencia en línea al siguiente nivel. ¡Con <span>Crof Programing</span>, tu
+                éxito en la web está asegurado!</p>
+            
+            
+        </div>
+    </div>
+
+<!-- Seccion Contacto -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <div class="col">
+                <form action="tu_script_de_procesamiento.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="tel" name="telefono" placeholder="Telefono" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Escribí tu mensaje" required></textarea>
+                    <button type="submit">Enviar<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+    </a>
+</footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
